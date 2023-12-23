@@ -1,0 +1,36 @@
+body{
+    margin:0;
+}
+#page-heading{
+    text-align: center;
+    margin-top: 25px;
+    color: grey;
+}
+#list{
+    list-style-type: none;
+    /* display: inline-block; */
+    text-align: center;
+}
+#list-item{
+    padding: 2px;
+    margin-left: 40%;
+    margin-right: 40%;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    background-color: greenyellow;
+    text-align: center;
+}
+#list-item:hover{
+    background-color: grey;
+    
+}
+#form{
+    text-align: center;
+}
+
+#btn{
+    background-color: grey;
+}
+#btn:hover{
+    background-color: greenyellow;
+}
