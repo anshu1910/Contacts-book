@@ -4,7 +4,7 @@ const path = require('path');
 
 const bodyParser = require('body-parser');
 // ...
-app.use(bodyParser.urlencoded({ extended: true }));
+
 
 // defining port
 const port = process.env.PORT || 8000;
@@ -18,7 +18,7 @@ const app = express();
 // setting view engine and views directory
 app.set('view engine', 'ejs');
 app.set('views', path.join(__dirname, 'views'));
-
+app.use(bodyParser.urlencoded({ extended: true }));
 // using middleware for form data and static files
 app.use(express.urlencoded());
 app.use(express.static('assets'));
