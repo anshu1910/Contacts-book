@@ -2,8 +2,12 @@
 const express = require('express');
 const path = require('path');
 
+const bodyParser = require('body-parser');
+// ...
+app.use(bodyParser.urlencoded({ extended: true }));
+
 // defining port
-const port = 8000;
+const port = process.env.PORT || 8000;
 
 // requiring necessary modules and files
 const db = require('./config/mongoose');
